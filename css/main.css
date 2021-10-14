@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+
+/* 헤더 */
+
+/* 첫번째 페이지 */
+/* .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+} */
+
+
+.slide1 {
+    background-image: url(../images/main_visual01.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.slide2 {
+    background-image: url(../images/main_visual02.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.slide3 {
+    background-image: url(../images/main_visual03.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.slide4 {
+    background-image: url(../images/main_visual04.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* 두번째 페이지 */
+.section01 {
+    background-image: url(../images/main_section02.jpg);
+}
+/* 세번째 페이지 */
+.section02 {
+    background-image: url(../images/main_section03.jpg);
+}
+/* 네번째 페이지 */
+.section03 {
+    background-image: url(../images/main_section04.jpg);
+}
+/* 푸터 */
