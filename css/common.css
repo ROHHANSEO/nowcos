@@ -9,3 +9,76 @@
 a { text-decoration: none !important; }
 img { border: 0; }
 ul { list-style: none; }
+
+
+
+/* 헤더 */
+.sub_gnb {
+    display: none;
+}
+
+#main_header {
+    overflow: hidden;
+    position: fixed;
+    display: block;
+    width: 100%;
+    z-index: 9;
+}
+
+
+.logo {
+    position: relative;
+    float: left;
+    left: 50px;
+    top: 25px;
+}
+
+#main_nav {
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+
+.main_gnb {
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 100px;
+}
+
+.gnb {
+    float: left;
+    display: block;
+    font-size: 15px;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.gnb > a {
+    color: white;
+}
+
+.lang {
+    position: relative;
+    float: right;
+    right: 60px;
+    top: 30px;
+    font-size: 13px;
+}
+
+.lang ul {
+    overflow: hidden;
+}
+
+.lang li {
+    float: left;
+}
+
+.lang a {
+    color: white;
+}
+
+.lang_cn,.lang_en {
+    display: none;
+}
+
+

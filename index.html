@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="./library/jquery.fullpage.css">
 </head>
 <body>
-    <!-- <header id="main_header">
+    <header id="main_header">
         <div class="logo">
-            <a href="#"><img src="./images/logo.png"></a>
+            <a href="#"><img src="./images/logo.png" width="115px" height="30px"></a>
         </div>
         <nav id="main_nav">
             <ul class="main_gnb">
@@ -62,95 +62,89 @@
             </ul>
             <div class="lang">
                 <ul>
-                    <li><a href="#">CN</a></li>
-                    <li><a href="#">EN</a></li>
-                    <li><a href="#">KR</a></li>
+                    <li><a href="#" class="langs lang_cn">CN</a></li>
+                    <li><a href="#" class="langs lang_en">EN</a></li>
+                    <li><a href="#" class="langs lang_kr">KR</a></li>
                 </ul>
             </div>
-        </nav> -->
-    <!-- </header>
+        </nav>
+    </header>
     <div id="quick_menu">
-        <div>
+        <div class="sub_nav nav1">
             <a href="#">Inquiry <br><p>문의하기</p></a>
         </div>
-        <div>
+        <div class="sub_nav nav2">
             <a href="#">Beauty Letter <br><p>뷰티레터</p></a>
         </div>
-    </div> -->
+    </div>
     <div id="fullpage">
-        <section class="section section00 swiper-container swiper1">
-            <div class="swiper-wrapper">
-                <div>
+        <section class="section section00 swiper-container swiper1" data-anchor="main01">
+            <div class="main01_content">
+                <div class="slide_select">
                     <a href="#">Beauty</a>
                     <a href="#">Solution</a>
                     <a href="#">Partner</a>
                 </div>
-                <div class="swiper-slide slide1">
-                    <span>나우코스는 세상이 원하는 그 이상의 <strong style="color:red">아름다움</strong>을 창조합니다.</span>
+                <p class="slide1_content">나우코스는 세상이 원하는 그 이상의 <strong style="color:red">아름다움</strong>을 창조합니다.</p>
+                <p class="slide2_content">나우코스는 <strong style="color:red">혁신적인 기술</strong>로 최고의 품질을 약속합니다.</p>
+                <p class="slide3_content">더 넓은 <strong style="color:red">글로벌 무대</strong>로 나우코스가 함께 도약합니다.</p>
+                <p class="slide4_content">언제나 당신의 든든한 <strong style="color:red">파트너</strong>, 나우코스</p>
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide1 page1"></div>
+                <div class="swiper-slide slide2 page1"></div>
+                <div class="swiper-slide slide3 page1"></div>
+                <div class="swiper-slide slide4 page1"></div>
+            </div>
+        </section>
+        <section class="section section01" data-anchor="main02">
+            <div id="main_content">
+                <div class="content cont">
+                    <div>
+                        <span class="stat_number">21</span>
+                        <br>
+                        <span>years</span>
+                    </div>
+                    <div class="cont_text">
+                        <span>NOWCOS 설립</span>
+                        <br>
+                        <span>2000년 3월(설립21년차)</span>
+                    </div>
                 </div>
-                <div class="swiper-slide slide2">
-                    <span>나우코스는 <strong style="color:red">혁신적인 기술</strong>로 최고의 품질을 약속합니다.</span>
+                <div class="content cont">
+                    <div>
+                        <span class="stat_number">20</span>
+                        <br>
+                        <span>%</span>
+                    </div>
+                    <div class="cont_text">
+                        <span>R&D 중심기업</span>
+                        <br>
+                        <span>전체 인력대비 연구개발인력 20%</span>
+                    </div>
                 </div>
-                <div class="swiper-slide slide3">
-                    <span>더 넓은 <strong style="color:red">글로벌 무대</strong>로 나우코스가 함께 도약합니다.</span>
-                </div>
-                <div class="swiper-slide slide4">
-                    <span>언제나 당신의 든든한 <strong style="color:red">파트너</strong>, 나우코스</span>
+                <div class="content">
+                    <div>
+                        <span class="stat_number">200</span>
+                        <br>
+                        <span>+</span>
+                    </div>
+                    <div class="cont_text">
+                        <span>파트너 사</span>
+                        <br>
+                        <span>200여 고객사와 협업을 진행</span>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="section section01">
-            <div>
-                <div>
-                    <span>21</span>
-                </div>
-                <div>
-                    <span>years</span>
-                </div>
-                <div>
-                    <span>nowcos 설립</span>
-                </div>
-                <div>
-                    <span>2000년 3월(설립21년차)</span>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <span>20</span>
-                </div>
-                <div>
-                    <span>%</span>
-                </div>
-                <div>
-                    <span>R&D 중심기업</span>
-                </div>
-                <div>
-                    <span>전체 인력대비 연구개발인력 20%</span>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <span>200</span>
-                </div>
-                <div>
-                    <span>+</span>
-                </div>
-                <div>
-                    <span>파트너 사</span>
-                </div>
-                <div>
-                    <span>200여 고객사와 협업을 진행</span>
-                </div>
-            </div>
-        </section>
-        <section class="section section02">
+        <section class="section section02" data-anchor="main03">
             <div>
                 <h3>NOWCOS <br>CORE VALUE</h3>
                 <p>나우코스의 5가지 핵심가치입니다.</p>
             </div>
-            <div>
-                <div>
-                    <div>
+            <div class="swiper-container swiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
                         <p><img src="./images/main03_img01.jpg"></p>
                         <div>
                             <strong>고객중심</strong>
@@ -159,7 +153,7 @@
                             </span>
                         </div>
                     </div>
-                    <div>
+                    <div class="swiper-slide slide2">
                         <p><img src="./images/main03_img02.jpg"></p>
                         <div>
                             <strong>기본과 원칙</strong>
@@ -168,7 +162,7 @@
                             </span>
                         </div>
                     </div>
-                    <div>
+                    <div class="swiper-slide slide3">
                         <p><img src="./images/main03_img03.jpg"></p>
                         <div>
                             <strong>행복 추구</strong>
@@ -177,7 +171,7 @@
                             </span>
                         </div>
                     </div>
-                    <div>
+                    <div class="swiper-slide slide4">
                         <p><img src="./images/main03_img04.jpg"></p>
                         <div>
                             <strong>열정과 신념</strong>
@@ -186,7 +180,7 @@
                             </span>
                         </div>
                     </div>
-                    <div>
+                    <div class="swiper-slide slide5">
                         <p><img src="./images/main03_img05.jpg"></p>
                         <div>
                             <strong>도전과 창의</strong>
@@ -198,7 +192,7 @@
                 </div>
             </div>
         </section>
-        <section class="section section03">
+        <section class="section section03" data-anchor="main04">
             <div>
                 <div>
                     <div>
@@ -273,9 +267,21 @@
             speed:1000,
         });
 
+
+        var swiper = new Swiper('.swiper2', {
+            autoplay: {
+            delay: 2000,
+            },
+            speed:1000,
+        });
+
+        
+
         $(document).ready(function() {
 			$('#fullpage').fullpage({
-				verticalCentered: false
+				verticalCentered: false,
+                anchors: ["main01","main02","main03","main04"],
+                animateAnchor:false
 			});
 		});
     </script>

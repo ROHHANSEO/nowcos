@@ -1,47 +1,155 @@
 @charset "UTF-8";
 
 
-/* 헤더 */
+
+/* sub_nav */
+
+#quick_menu {
+    position: fixed;
+    display: block;
+    overflow: hidden;
+    z-index: 9;
+    bottom: 0px;
+    right: 58%;
+}
+
+
+.nav1 {
+    float: left;
+    background-color: white;
+    position: relative;
+    width: 155px;
+    height: 80px;
+}
+
+.nav1 a {
+    color: red;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 17px;
+}
+
+.nav1 p {
+    color: black;
+    font-size: 8px;
+}
+
+.nav2 {
+    float: left;
+    background-color: red;
+    position: relative;
+    width: 205px;
+    height: 80px;
+    font-size: 17px;
+}
+
+.nav2 a {
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.nav2 p {
+    font-size: 8px;
+}
 
 /* 첫번째 페이지 */
-/* .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-} */
+.section {
+    position: relative;
+}
 
+.main01_content {
+    z-index: 99;
+    position: absolute;
+    top: 35%;
+    left: 25%;
+}
 
-.slide1 {
+.slide_select a {
+    font-size: 75px;
+    display: inline-block;
+    color: white;
+    margin-left: 10px;
+}
+
+.slide1.page1 {
     background-image: url(../images/main_visual01.jpg);
     background-size: cover;
     background-position: center;
 }
-.slide2 {
+
+.slide2.page1 {
     background-image: url(../images/main_visual02.jpg);
     background-size: cover;
     background-position: center;
 }
-.slide3 {
+
+.slide3.page1 {
     background-image: url(../images/main_visual03.jpg);
     background-size: cover;
     background-position: center;
 }
-.slide4 {
+
+.slide4.page1 {
     background-image: url(../images/main_visual04.jpg);
     background-size: cover;
     background-position: center;
 }
+
+
 /* 두번째 페이지 */
 .section01 {
     background-image: url(../images/main_section02.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center;
 }
+
+#main_content {
+    position: absolute;
+    width: 1140px;
+    overflow: hidden;
+    top: 40%;
+    left: 12%;
+}
+
+.content {
+    position: relative;
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    color: #fff;
+    font-family: 'Montserrat', 'Noto Sans KR';
+}
+
+.stat_number {
+    font-size: 100px;
+}
+
+.cont_text {
+    margin-top: 30px;
+}
+
+.cont_text :first-child {
+    font-size: 20px;
+}
+
+.cont_text :last-child {
+    font-size: 10px;
+}
+
 /* 세번째 페이지 */
 .section02 {
     background-image: url(../images/main_section03.jpg);
+    background-size: cover;
+    background-position: center;
 }
 /* 네번째 페이지 */
 .section03 {
     background-image: url(../images/main_section04.jpg);
+    background-size: cover;
+    background-position: center;
 }
 /* 푸터 */
