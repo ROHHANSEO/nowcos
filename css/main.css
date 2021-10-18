@@ -74,25 +74,25 @@
     margin-left: 10px;
 }
 
-.slide1.page1 {
+.slide_index .slide1 {
     background-image: url(../images/main_visual01.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.slide2.page1 {
+.slide_index .slide2 {
     background-image: url(../images/main_visual02.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.slide3.page1 {
+.slide_index .slide3 {
     background-image: url(../images/main_visual03.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.slide4.page1 {
+.slide_index .slide4 {
     background-image: url(../images/main_visual04.jpg);
     background-size: cover;
     background-position: center;
@@ -146,10 +146,101 @@
     background-size: cover;
     background-position: center;
 }
+
+.swiper2 {
+    position: relative;
+    top: 23%;
+    left: 820px;
+}
+
+.swiper2 .swiper-wrapper {
+    position: relative;
+    height: 500px;
+}
+
+.swiper2 img {
+    width: 360px;
+    height: 250px;
+}
+
+.swiper2 .text {
+    position: absolute;
+    color: white;
+    width: 360px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid white;
+    
+}
+
+.text strong {
+    margin-top: 30px;
+    font-size: 22px;
+    line-height: 30px;
+    display: block;
+}
+
+.text span {
+    font-size: 14px;
+}
+
+.main03_content {
+    position: absolute;
+    top: 24%;
+    left: 18%;
+}
+
+.main03_content h3 {
+    font-size: 57px;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.main03_content p {
+    font-size: 15px;
+    color: white;
+}
+
 /* 네번째 페이지 */
 .section03 {
     background-image: url(../images/main_section04.jpg);
     background-size: cover;
     background-position: center;
+    position: relative;
 }
+
+.swiper3 {
+    position: absolute;
+    top: 43%;
+    left: 51%;
+}
+
+
+.swiper3 h1 {
+    font-size: 50px;
+    color: white;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.swiper3 p {
+    color: white;
+}
+
+.slide_nav {
+    overflow: hidden;
+}
+
+.slide_nav li {
+    float: left;
+    margin-top: 200px;
+}
+
+.slide_nav li:not(:first-child) {
+    margin-left: 100px;
+}
+
+.slide_nav a {
+    color: white;
+}
+
 /* 푸터 */
