@@ -82,14 +82,11 @@
         <section class="section section00 swiper-container swiper1" data-anchor="main01">
             <div class="main01_content">
                 <div class="slide_select">
-                    <a href="#" class="slide_button1">Beauty</a>
-                    <a href="#" class="slide_button2">Solution</a>
-                    <a href="#" class="slide_button3">Partner</a>
+                    <a href="#" class="button slide_button1 animate__animated animate__fadeInUp">Beauty</a>
+                    <a href="#" class="button slide_button2 animate__animated animate__fadeInUp">Solution</a>
+                    <a href="#" class="button slide_button3 animate__animated animate__fadeInUp">Partner</a>
                 </div>
-                <!-- <div><p class="slide_content">나우코스는 세상이 원하는 그 이상의 <strong style="color:red">아름다움</strong>을 창조합니다.</p></div>
-                <div><p class="slide_content">나우코스는 <strong style="color:red">혁신적인 기술</strong>로 최고의 품질을 약속합니다.</p></div>
-                <div><p class="slide_content">더 넓은 <strong style="color:red">글로벌 무대</strong>로 나우코스가 함께 도약합니다.</p></div>
-                <div><p class="slide_content">언제나 당신의 든든한 <strong style="color:red">파트너</strong>, 나우코스</p></div> -->
+                <div><p class="slide_content animate__animated animate__fadeInUp">나우코스는 세상이 원하는 그 이상의 <strong class="content_str">아름다움</strong>을 창조합니다.</p></div>
             </div>
             <div class="swiper-wrapper slide_index">
                 <div class="swiper-slide slide1 page1"></div>
@@ -224,9 +221,9 @@
                     </div>
                 </div>                
                 <ul class="slide_nav">
-                    <li><a href="#">개발 프로세스</a></li>
-                    <li><a href="#">R&D</a></li>
-                    <li><a href="#">품질 관리 시스템</a></li>
+                    <li><a href="#" class="slide3_button1">개발 프로세스</a></li>
+                    <li><a href="#" class="slide3_button2">R&D</a></li>
+                    <li><a href="#" class="slide3_button3">품질 관리 시스템</a></li>
                 </ul>
             </div>
         </section>
@@ -273,67 +270,9 @@
     <script src="./library/swiper.min.js"></script>
     <script src="./library/jquery-3.6.0.min.js"></script>
     <script src="./library/jquery.fullpage.js"></script>
+    <script src="./js/main.js"></script>
     <script>
 
-        var swiper1 = new Swiper('.swiper1', {
-            autoplay: {
-            delay: 2000,
-            },
-            speed:1000,
-            navigation: {
-                prevEl: '.prev',
-                nextEl: '.next',
-                },
-
-        });
-        
-        swiper1.on('transitionStart', function() { 
-            var index = swiper1.realIndex
-            $('#test').text(index+1+" ");
-        });
-
-
-        $(".slide_button1").on("click", function() {
-            swiper1.slideTo(0);
-        });
-        $(".slide_button2").on("click", function() {
-            swiper1.slideTo(1);
-        });
-        $(".slide_button3").on("click", function() {
-            swiper1.slideTo(2);
-        });
-
-        var swiper2 = new Swiper('.swiper2', {
-            loop: true,
-            autoplay: {
-            delay: 2000,
-            },
-            speed:1000,
-            slidesPerView: 3,
-            // width: 800,
-            setWrapperSize: true,
-            spaceBetween:-250
-        });
-
-        var swiper3 = new Swiper('.swiper3', {
-            effect : 'fade',
-            fadeEffect: {
-            crossFade: true
-            },
-            autoplay: {
-            delay: 8000,
-            },
-            speed:500,
-        });
-
-        
-        $(document).ready(function() {
-			$('#fullpage').fullpage({
-				verticalCentered: false,
-                anchors: ["main01","main02","main03","main04"],
-                animateAnchor:false
-			});
-		});
     </script>
 </body>
 </html>
