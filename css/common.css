@@ -14,7 +14,29 @@ ul { list-style: none; }
 
 /* 헤더 */
 .sub_gnb {
+    position: absolute;
+    height: 70px;
+    top: 102px;
+    left: 40px;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.show_menu {
     display: none;
+}
+
+.sub_gnb li {
+    display: inline-block;
+}
+
+.sub_gnb a {
+    display: block;
+    height: 70px;
+    line-height: 70px;
+    font-size: 14px;
+    color: #262626;
+    padding: 0 10px;
 }
 
 #main_header {
@@ -22,7 +44,7 @@ ul { list-style: none; }
     z-index: 9;
     height: 100px;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 #main_header .logo {
@@ -32,11 +54,42 @@ ul { list-style: none; }
     left: 20px;
 }
 
+
+#main_nav {
+    position: relative;
+    width: 830px;
+    height: 100px;
+    margin: 0 auto;
+    z-index: 9;
+    float: none;
+}
+
+.main_gnb {
+    height: 100px;
+}
+
+.main_gnb>li {
+    float: left;
+    padding: 0 40px;
+    position: relative;
+}
+
+.main_gnb>li>a {
+    position: relative;
+    display: block;
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 100px;
+    font-weight: 600;
+}
+
 #main_header .lang {
     float: right;
     position: relative;
     padding: 10px 10px;
-    top: 30px;
+    top: -60px;
     right: 60px;
 }
 
@@ -48,34 +101,34 @@ ul { list-style: none; }
     font-weight: 100;
 }
 
-.lang .none {
-    opacity: 0;
-}
+
 
 .lang li {
     display: inline-block;
 }
 
-#main_nav {
-    position: relative;
-    float: left;
-    left: 200px;
-}
-
-.gnb {
-    display: inline-block;
-    padding: 30px 30px;
-    font-size: 20px;
-}
-
-.gnb a {
-    color: white;
-}
-
 .lang a {
-    color: white;
+    color: #fff;
 }
 
+.lang .none {
+    display: none;
+}
+
+.sub_gnbbox {
+    position: fixed;
+    display: none;
+    background-color: #fff;
+    left: 0%;
+    top: 100px;
+    width: 100%;
+    height: 99px;
+    z-index: 9;
+}
+
+#main_header.on {
+    background-color: #fff;
+}
 
 
 
@@ -90,6 +143,13 @@ ul { list-style: none; }
     top: 20px;
     width: 10px;
     height: 7px;
+    background-repeat: no-repeat
+}
+
+.lang_kr:hover::after{
+    transform: rotate(90deg);
+    transition: all 0.5s;
+    transition-timing-function: ease-in-out;
 }
 
 .lang_kr::before {
@@ -100,12 +160,13 @@ ul { list-style: none; }
     width: 30px;
     height: 2px;
     bottom: 0;
-    left: 40px;
+    right: 10px;
     opacity: 0;
 }
 
 .lang_kr:hover::before {
     opacity: 1;
 }
+
 
 

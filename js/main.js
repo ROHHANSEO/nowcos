@@ -75,6 +75,15 @@ $(".slide3_button3").on("mouseover", function(){
     swiper3.slideTo(2);
 });
 
+swiper3.on("slideChange", function(){
+    $(".page3_button").removeClass("active");
+    $(".page3_button").eq(this.realIndex).addClass("active");
+});
+swiper3.on("slideChange", function(){
+    $(".button3").removeClass("active");
+    $(".button3").eq(this.realIndex).addClass("active");
+});
+
 
 $(document).ready(function() {
 	$('#fullpage').fullpage({
