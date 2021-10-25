@@ -10,49 +10,99 @@
     overflow: hidden;
     z-index: 9;
     bottom: 0px;
-    right: 58%;
+    left: 50%;
+    /* transition: all 0.2s;
+    transition-timing-function: ease-in-out; */
 }
 
-
-.nav1 {
+#quick_menu .sub_nav {
+    position: fixed;
+    margin-left: -600px;
+    left: 50%;
+    display: block;
     float: left;
-    background-color: white;
-    position: relative;
-    width: 155px;
-    height: 80px;
+    padding: 25px 40px 0;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.nav1 a {
+
+#quick_menu .nav1 {
+    width: 110px;
+    height: 75px;
+    background: #fff;
+    bottom: 0;
     color: red;
+}
+
+#quick_menu .nav1::after {
+    content: ''; 
+    display: block;
     position: absolute;
-    top: 20px;
-    left: 30px;
-    font-size: 17px;
+    width: 29px; 
+    height: 14px; 
+    right: 80px; 
+    bottom: 40px; 
+    background: url(../images/ic_aw.png); 
+    opacity: 0;
+}
+
+#quick_menu .nav2::after {
+    content: ''; 
+    display: block;
+    position: absolute;
+    width: 29px; 
+    height: 14px; 
+    right: 80px; 
+    bottom: 40px; 
+    background: url(../images/ic_aw1.png); 
+    opacity: 0;
+}
+
+#quick_menu .nav2 {
+    left: 61.8%;
+    height: 100px;
+    width: 170px;
+    height: 75px;
+    background-color: #ec0928;
+    color: #fff;
+    bottom: 0;
 }
 
 .nav1 p {
     color: black;
-    font-size: 8px;
 }
 
-.nav2 {
-    float: left;
-    background-color: red;
-    position: relative;
-    width: 205px;
-    height: 80px;
-    font-size: 17px;
+.sub_nav p {
+    font-size: 13px;
+    font-weight: 100;
 }
 
-.nav2 a {
-    color: white;
-    position: absolute;
-    top: 20px;
-    left: 30px;
+
+#quick_menu .nav1:hover {
+    height: 130px;
+    transition: all 0.2s;
+    transition-timing-function: ease-in-out;
 }
 
-.nav2 p {
-    font-size: 8px;
+#quick_menu .nav2:hover {
+    height: 130px;
+    transition: all 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+#quick_menu .nav1:hover::after {
+    transition: all 0.2s;
+    transition-timing-function: ease-in-out;
+    opacity: 1;
+    left: 40px;
+}
+
+#quick_menu .nav2:hover::after {
+    transition: all 0.2s;
+    transition-timing-function: ease-in-out;
+    opacity: 1;
+    right: 40px;
 }
 
 /* 첫번째 페이지 */
@@ -74,16 +124,6 @@
     position: relative;
 }
 
-.slide_select a {
-    font-size: 70px;
-    color: rgba(255, 255, 255, 0.5);
-    font-weight: bold;
-}
-
-.button.active {
-    color: rgba(255, 255, 255, 1);
-}
-
 .slide_content {
     margin-top: 20px;
     color: white;
@@ -93,29 +133,67 @@
     color: red;
 }
 
-.slide_select .slide_button1.active {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7) 100%, transparent 0); 
-    background-position: 0 0.85em; 
-    background-repeat: repeat-x; 
-    background-size: 1px 0.5em;
+.slide_select a {
+    font-size: 70px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+    position: relative;
+    z-index: 9;
+}
+
+.button.active {
+    color: rgba(255, 255, 255, 1);
 }
 
 
-.slide_select .slide_button2.active {
-    background-image: linear-gradient(rgba(255, 0, 0, 0.705) 100%, transparent 0); 
-    background-position: bottom;
-    background-repeat: repeat-x; 
-    background-size: 1px 0.5em;
+.slide_select .slide_button1::before {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 0;
+    transition: all 0.9s;
+    left: 0;
+    z-index: -1;
 }
 
 
-.slide_select .slide_button3.active {
-    background-image: linear-gradient(rgba(0, 17, 255, 0.7) 100%, transparent 0); 
-    background-position: 0 0.85em; 
-    background-repeat: repeat-x; 
-    background-size: 1px 0.5em;
+
+.slide_select .slide_button2::before {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 25px;
+    background-color: rgba(255, 0, 0, 0.8);
+    position: absolute;
+    bottom: 0;
+    transition: all 0.9s;
+    left: 0;
+    z-index: -1;
+
 }
 
+
+.slide_select .slide_button3::before {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 25px;
+    background-color: rgba(0, 0, 255, 0.8);
+    position: absolute;
+    bottom: 0;
+    transition: all 0.9s;
+    left: 0;
+    z-index: -1;
+
+}
+
+.slide_select .button.active::before {
+    display: block;
+    width: 100%;
+}
 
 .slide_select a:not(:first-child) {
     margin-left: 15px;

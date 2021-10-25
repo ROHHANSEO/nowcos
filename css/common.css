@@ -18,67 +18,94 @@ ul { list-style: none; }
 }
 
 #main_header {
-    overflow: hidden;
     position: fixed;
-    display: block;
-    width: 100%;
     z-index: 9;
-}
-
-
-.logo {
-    position: relative;
-    float: left;
-    left: 50px;
-    top: 25px;
-}
-
-#main_nav {
-    text-align: center;
-    position: relative;
-    top: 10px;
-}
-
-.main_gnb {
+    height: 100px;
+    width: 100%;
     overflow: hidden;
-    display: inline-block;
-    margin-right: 100px;
 }
 
-.gnb {
+#main_header .logo {
     float: left;
-    display: block;
-    font-size: 15px;
-    padding: 20px;
-    margin-right: 20px;
-}
-
-.gnb > a {
-    color: white;
-}
-
-.lang {
     position: relative;
+    padding: 30px 40px;
+    left: 20px;
+}
+
+#main_header .lang {
     float: right;
-    right: 60px;
+    position: relative;
+    padding: 10px 10px;
     top: 30px;
-    font-size: 13px;
-}
-
-.lang ul {
-    overflow: hidden;
+    right: 60px;
 }
 
 .lang li {
+    padding: 0 5px;
+}
+
+.lang .langs {
+    font-weight: 100;
+}
+
+.lang .none {
+    opacity: 0;
+}
+
+.lang li {
+    display: inline-block;
+}
+
+#main_nav {
+    position: relative;
     float: left;
+    left: 200px;
+}
+
+.gnb {
+    display: inline-block;
+    padding: 30px 30px;
+    font-size: 20px;
+}
+
+.gnb a {
+    color: white;
 }
 
 .lang a {
     color: white;
 }
 
-.lang_cn,.lang_en {
-    display: none;
+
+
+
+/* 언어선택 애니메이션 */
+
+.lang_kr::after {
+    content: ' ';
+    position: absolute;
+    display: block;
+    background: url(../images/blt_select.png);
+    right: -30px;
+    top: 20px;
+    width: 10px;
+    height: 7px;
+}
+
+.lang_kr::before {
+    content: ' ';
+    position: absolute;
+    display: block;
+    background-color: white;
+    width: 30px;
+    height: 2px;
+    bottom: 0;
+    left: 40px;
+    opacity: 0;
+}
+
+.lang_kr:hover::before {
+    opacity: 1;
 }
 
 
