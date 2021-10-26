@@ -192,7 +192,7 @@
 }
 
 .slide_select a {
-    font-size: 70px;
+    font-size: 90px;
     color: rgba(255, 255, 255, 0.5);
     font-weight: bold;
     position: relative;
@@ -515,3 +515,22 @@
 }
 
 /* 푸터 */
+/* 반응형 */
+
+@media screen and (max-width: 1200px) {
+    #main_header .logo {
+        float: left;
+        position: relative;
+        padding: 30px 10px;
+        left: 1%;
+    }
+}
+
+@media screen and (min-width: 768px) and  (max-width: 1024px) {
+    
+}
+
+@media screen and (min-width: 425px) and  (max-width: 767px) {
+
+}
+
