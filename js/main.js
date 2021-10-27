@@ -47,9 +47,9 @@ var swiper2 = new Swiper('.swiper2', {
     },
     speed:1000,
     slidesPerView: 3,
-    // width: 800,
+    width: 1000,
     setWrapperSize: true,
-    spaceBetween:-250
+    spaceBetween: 30,
 });
 
 

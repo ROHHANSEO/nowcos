@@ -184,5 +184,329 @@ ul { list-style: none; }
     opacity: 1;
 }
 
+.bt_mn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    right: 5vw;
+    margin-top: -20px;
+    z-index: 9;
+    display: none;
+}
+
+.bt_mn span {
+    display: none;
+}
+
+
+
+
+
+/* 반응형 */
+
+@media screen and (max-width: 1200px) {
+    #main_header .logo {
+        float: left;
+        position: relative;
+        padding: 30px 10px;
+        left: 1%;
+    }
+}
+
+@media screen and (min-width: 640px) and  (max-width: 1023px) {
+    .main_gnb>li>a {
+        display: none;
+    }
+
+    .lang {
+        display: none;
+    }
+
+    .logo img {
+        width: 160px;
+        height: 45px;
+    }
+
+    .bar i {
+        display: none;
+    }
+
+    .bar i::after {
+        display: none;
+    }
+
+    .bar .pg_next::after {
+        content: url(../images/bar_ang.png);
+        position: absolute;
+        transform: rotate(-90deg);
+        top: 36px;
+        left: 10px;
+    }
+
+    .bar .pg_next {
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        display: block;
+        margin: 0;
+        width: 3.2rem;
+        height: 3.2rem;
+        background-color: #ec0928;
+        border-radius: 50%;
+    }
+
+
+    #quick_menu {
+        display: none !important;
+    }
+
+    .button_container {
+        left: 30px;
+    }
+    
+    .button_container div {
+        position: relative;
+        left: 100px;
+    }
+
+    .page_number {
+        margin-left: 0px;
+        left: -100px;
+        position: relative;
+    }
+
+    .bt_mn {
+        display: block;
+    }
+
+    .bt_mn i {
+        background-color: #fff;
+        position: absolute;
+        right: 0;
+        width: 38px;
+        height: 4px;
+        display: block;
+    }
+
+    .bt_mn i:nth-child(1) {
+        top: 8px;
+    }
+
+    .bt_mn i:nth-child(2) {
+        top: 19px;
+        width: 30px !important;
+    }
+
+    .bt_mn i:nth-child(3) {
+        top: 30px;
+    }
+}
+
+
+/* 모바일 */
+/* 메인페이지 */
+@media screen and (max-width: 639px) {
+    .main_gnb>li>a {
+        display: none;
+    }
+
+    .lang {
+        display: none;
+    }
+
+    .logo img {
+        width: 80px;
+        height: 20px;
+    }
+
+    .bar {
+        display: none;
+    }
+
+    #quick_menu {
+        display: block;
+        position: fixed !important;
+        bottom: 0 !important;
+        right: 0 !important;
+        width: 210px !important;
+        height: 50px;
+        margin-left: 0;
+        z-index: 9;
+        left: auto !important;
+    }
+
+    .sub_nav {
+        position: relative;
+        bottom: 0;
+        right: 0;
+    }
+
+    #quick_menu .nav2 {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100px !important;
+        height: 50px !important;
+        padding: 5px 10px 0 10px !important;
+        font-size: 10px !important;
+    }
+
+    #quick_menu .nav1 {
+        position: absolute;
+        width: 70px !important;
+        height: 50px !important;
+        left: auto;
+        right: 120px;
+        padding: 5px 10px 0 10px !important;
+        font-size: 10px !important;
+    }
+
+    .button_container {
+        left: 30px;
+    }
+    
+    .button_container div {
+        position: relative;
+        left: 100px;
+    }
+
+    .page_number {
+        margin-left: 0px;
+        left: -100px;
+        position: relative;
+    }
+
+    .bt_mn {
+        display: block;
+    }
+
+    .bt_mn i {
+        background-color: #fff;
+        position: absolute;
+        right: 0;
+        width: 22px;
+        height: 2px;
+        display: block;
+    }
+
+    .bt_mn i:nth-child(1) {
+        top: 12px;
+    }
+
+    .bt_mn i:nth-child(2) {
+        top: 19px;
+        width: 16px !important;
+    }
+
+    .bt_mn i:nth-child(3) {
+        top: 26px;
+    }
+
+    .slide_select a {
+        font-size: 50px !important;
+        display: block;
+        text-align: left;
+        margin-left: 30px !important;
+        width: 200px;
+    }
+
+    .slide_content {
+        text-align: left;
+        margin-left: 30px;
+        font-size: 15px;
+    }
+
+
+
+    /* 두번째 페이지 */
+
+    #main_content {
+        top: 130px !important;
+        left: auto !important;
+    }
+
+    .stat_number {
+        font-weight: 700;
+    }
+
+    .content {
+        float: none !important;
+        width: auto !important;
+        text-align: left !important;
+        overflow: hidden;
+        padding: 30px 50px;
+    }
+
+    .content div {
+        float: left;
+        width: 100px;
+        text-align: center;
+    }
+
+    .content .stat_number {
+        font-size: 50px;
+    }
+
+    .cont_text {
+        width: 300px !important;
+        text-align: left !important;
+        margin-left: 30px;
+    }
+ 
+    .cont::before {
+        content: ' ';
+        position: absolute;
+        width: 500px !important;
+        height: 1px !important;
+        background-color: #fff !important;
+        right: auto !important;
+        bottom: 0px !important;
+        left: 50px;
+    }
+
+
+    /* 세번째 페이지 */
+
+    .main03_content {
+        width: 100%;
+        top: 15% !important;
+        left: auto !important;
+        text-align: center;
+    }
+
+    .main03_content h3 {
+        font-size: 35px !important;
+        padding-bottom: 0 !important;
+    }
+
+    .main03_content p {
+        font-size: 12px !important;
+        line-height: 30px;
+    }
+
+    .swiper2 {
+        left: auto !important;
+        top: 35% !important;
+    }
+
+    .swiper2 .swiper-slide {
+        width: 383px !important;
+    }
+
+    /* 네번째 페이지 */
+
+    .swiper3 h1 {
+        font-size: 30px !important; 
+    }
+
+    .swiper3 {
+        top: 30% !important;
+        left: auto !important;
+        margin-left: 20px !important;
+    }
+}
+
+
 
 
