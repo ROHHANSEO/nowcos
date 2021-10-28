@@ -40,17 +40,32 @@ $(".slide_button3").on("click", function() {
 
 
 // 두번째 페이지
-var swiper2 = new Swiper('.swiper2', {
-    loop: true,
-    autoplay: {
-    delay: 2000,
-    },
-    speed:1000,
-    slidesPerView: 3,
-    width: 1000,
-    setWrapperSize: true,
-    spaceBetween: 30,
-});
+
+if(matchMedia("screen and (min-width: 640px)").matches) {
+    var swiper2 = new Swiper('.swiper2', {
+        loop: true,
+        autoplay: {
+            delay: 2000,
+        },
+        speed:1000,
+        slidesPerView: 3,
+        width: 1000,
+        setWrapperSize: true,
+        spaceBetween: 300,
+    });
+} else {
+    var swiper2 = new Swiper('.swiper2', {
+        loop: true,
+        autoplay: {
+        delay: 2000,
+        },
+        speed:1000,
+        slidesPerView: 3,
+        width: 1000,
+        setWrapperSize: true,
+        spaceBetween: 30,
+    });
+}
 
 
 //세번째 페이지
@@ -88,7 +103,9 @@ swiper3.on("slideChange", function(){
 $(document).ready(function() {
 	$('#fullpage').fullpage({
 		verticalCentered: false,
-        anchors: ["main01","main02","main03","main04"],
+        anchors: ["main01","main02","main03","main04","main05"],
         animateAnchor:false
 	});
 });
+
+$

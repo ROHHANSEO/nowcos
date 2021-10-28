@@ -28,46 +28,87 @@ $(".main_gnb").on("mouseout", function() {
 
 // 서브메뉴 디스플레이
 // 1
-$(".gnb1").on("mouseover", function() {
-    $(".gnb1>ul").removeClass("show_menu");
+$(".main_gnb .gnb1").on("mouseover", function() {
+    $(".main_gnb>.gnb1>ul").removeClass("show_menu");
 });
 
-$(".gnb1").on("mouseout", function() {
-    $(".gnb1>ul").addClass("show_menu");
+$(".main_gnb .gnb1").on("mouseout", function() {
+    $(".main_gnb>.gnb1>ul").addClass("show_menu");
 });
 
 // 2
-$(".gnb2").on("mouseover", function() {
-    $(".gnb2>ul").removeClass("show_menu");
+$(".main_gnb .gnb2").on("mouseover", function() {
+    $(".main_gnb>.gnb2>ul").removeClass("show_menu");
 });
 
-$(".gnb2").on("mouseout", function() {
-    $(".gnb2>ul").addClass("show_menu");
+$(".main_gnb .gnb2").on("mouseout", function() {
+    $(".main_gnb>.gnb2>ul").addClass("show_menu");
 });
 
 // 3
-$(".gnb3").on("mouseover", function() {
-    $(".gnb3>ul").removeClass("show_menu");
+$(".main_gnb .gnb3").on("mouseover", function() {
+    $(".main_gnb>.gnb3>ul").removeClass("show_menu");
 });
 
-$(".gnb3").on("mouseout", function() {
-    $(".gnb3>ul").addClass("show_menu");
+$(".main_gnb .gnb3").on("mouseout", function() {
+    $(".main_gnb>.gnb3>ul").addClass("show_menu");
 });
 
 // 4
-$(".gnb4").on("mouseover", function() {
-    $(".gnb4>ul").removeClass("show_menu");
+$(".main_gnb .gnb4").on("mouseover", function() {
+    $(".main_gnb>.gnb4>ul").removeClass("show_menu");
 });
 
-$(".gnb4").on("mouseout", function() {
-    $(".gnb4>ul").addClass("show_menu");
+$(".main_gnb .gnb4").on("mouseout", function() {
+    $(".main_gnb>.gnb4>ul").addClass("show_menu");
 });
 
 // 5
-$(".gnb5").on("mouseover", function() {
-    $(".gnb5>ul").removeClass("show_menu");
+$(".main_gnb .gnb5").on("mouseover", function() {
+    $(".main_gnb>.gnb5>ul").removeClass("show_menu");
 });
 
-$(".gnb5").on("mouseout", function() {
-    $(".gnb5>ul").addClass("show_menu");
+$(".main_gnb .gnb5").on("mouseout", function() {
+    $(".main_gnb>.gnb5>ul").addClass("show_menu");
 });
+
+
+// 모바일메뉴 활성화
+
+$(".bt_mn").on("click", function() {
+    $("#mo_nav").addClass("active");
+});
+
+$(".mo_lang>a").on("click", function() {
+    $("#mo_nav").removeClass("active");
+});
+
+
+
+
+
+$(".mo_gnb>.gnb1>a").on("mouseover", function() {
+    $(".mo_gnb>.gnb1").addClass("active");
+});
+
+$(".mo_gnb>.gnb2>a").on("mouseover", function() {
+    $(".mo_gnb>.gnb2").addClass("active");
+});
+
+$(".mo_gnb>.gnb3>a").on("mouseover", function() {
+    $(".mo_gnb>.gnb3").addClass("active");
+});
+
+$(".mo_gnb>.gnb4>a").on("mouseover", function() {
+    $(".mo_gnb>.gnb4").addClass("active");
+});
+
+$(".mo_gnb>.gnb5>a").on("mouseover", function() {
+    $(".mo_gnb>.gnb5").addClass("active");
+});
+
+$(".mo_gnb>li").on("mouseout", function() {
+    $(".mo_gnb>li").removeClass("active");
+});
+
+
