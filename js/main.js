@@ -108,4 +108,8 @@ $(document).ready(function() {
 	});
 });
 
-$
+
+
+$(".bar .pg_next").click(function() {
+    $.fn.fullpage.moveSectionDown();
+}); 

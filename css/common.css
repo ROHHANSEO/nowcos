@@ -216,6 +216,7 @@ ul { list-style: none; }
 }
 
 
+
 #main_nav {
     position: relative;
     width: 830px;
@@ -389,11 +390,11 @@ ul { list-style: none; }
     }
 
     .bar i {
-        display: none;
+        display: none !important;
     }
 
     .bar i::after {
-        display: none;
+        display: none !important;
     }
 
     .bar .pg_next::after {
@@ -402,6 +403,17 @@ ul { list-style: none; }
         transform: rotate(-90deg);
         top: 36px;
         left: 10px;
+    }
+
+    .bar .pg_prev::after {
+        display: none !important;
+    }
+
+    .fp-viewing-main04 .bar .pg_next::after {
+        display: block !important;
+    }
+    .fp-viewing-main05 .bar .pg_next::after {
+        display: block !important;
     }
 
     .bar .pg_next {
@@ -743,6 +755,9 @@ ul { list-style: none; }
     .slide_nav li::before {
         width: 200px !important;
     }
+
+    /* 푸터 */
+    
 }
 
 
