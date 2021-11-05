@@ -39,6 +39,26 @@ $(".slide_button3").on("click", function() {
 });
 
 
+// $(".stop").on("click", function() {
+//     if ((".stop").hasClass("on")) {
+//         $(".stop").removeClass("on");
+//         $(".stop").attr("src","./images/main_play.png");
+//         swiper1.autoplay.play();
+//     } else {
+//         $(".stop").addClass("on");
+//         $(".stop").attr("src","./images/main_stop.png");
+//         swiper1.autoplay.stop();
+//     }
+// });
+
+$(".stop").on("click", function() {
+    $(this).toggleClass("on")
+});
+
+$(".stop.on").attr("src","./images/main_play.png"); 
+
+
+
 // 두번째 페이지
 
 if(matchMedia("screen and (min-width: 640px)").matches) {

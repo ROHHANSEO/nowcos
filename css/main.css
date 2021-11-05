@@ -38,13 +38,12 @@
 
 #quick_menu .nav2 {
     position: relative;
-    left: 0px;
-    height: 100px;
     width: 170px;
     height: 75px;
     background-color: #ec0928;
     color: #fff;
     bottom: 0;
+    left: 0;
 }
 
 #quick_menu .nav1::after {
@@ -85,13 +84,11 @@
 #quick_menu .nav1:hover {
     height: 130px;
     transition: all 0.2s;
-    transition-timing-function: ease-in-out;
 }
 
 #quick_menu .nav2:hover {
     height: 130px;
     transition: all 0.2s;
-    transition-timing-function: ease-in-out;
 }
 
 #quick_menu .nav1:hover::after {
@@ -320,6 +317,7 @@
     margin-left: 20px;
     display: inline-block;
 }
+
 
 .page_number {
     float: left;
@@ -610,4 +608,20 @@
 
 .mo_quick {
     display: none;
+}
+
+.slide_button1 {
+    animation-delay: 100ms;
+}
+
+.slide_button2 {
+    animation-delay: 400ms;
+}
+
+.slide_button3 {
+    animation-delay: 700ms;
+}
+
+.slide_content {
+    animation-delay: 900ms;
 }
