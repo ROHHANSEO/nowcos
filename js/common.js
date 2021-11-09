@@ -12,7 +12,7 @@ $(".main_gnb").on("mouseover", function() {
     $("#main_header").addClass("on");
     $(".main_gnb>li>a").css("color","black");
     $(".langs").css("color","black");
-    $(".logo>a>img").attr("src","../images/logo_on.png")
+    $(".logo>a>img").attr("src","./images/logo_on.png")
     $(".sub_gnbbox").css("display","block")
     $(".sub_gnbbox").css("border-top","1px solid #808080")
 });
@@ -21,7 +21,7 @@ $(".main_gnb").on("mouseout", function() {
     $("#main_header").removeClass("on");
     $(".main_gnb>li>a").css("color","#fff");
     $(".langs").css("color","#fff");
-    $(".logo>a>img").attr("src","../images/logo.png")
+    $(".logo>a>img").attr("src","./images/logo.png")
     $(".sub_gnbbox").css("display","none")
 });
 
